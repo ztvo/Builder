@@ -1,4 +1,4 @@
-public class MultiMediaComputerBuilder implements ComputerBuilder{
+public class MultiMediaComputerBuilder implements ComputerBuilder {
     private String CPU;
     private String RAM;
     private String graphicsCard;

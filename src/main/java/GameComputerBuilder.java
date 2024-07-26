@@ -1,4 +1,4 @@
-public class GameComputerBuilder implements ComputerBuilder{
+public class GameComputerBuilder implements ComputerBuilder {
     private String CPU;
     private String RAM;
     private String graphicsCard;
