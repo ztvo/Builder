@@ -38,7 +38,6 @@ public class OfficeComputerBuilder implements ComputerBuilder {
 
     @Override
     public Computer build() {
-        Computer computer = new Computer(CPU, RAM, graficsCard, powerSupply);
-        return computer;
+        return new Computer(CPU, RAM, graficsCard, powerSupply);
     }
 }

@@ -1,19 +1,17 @@
 public interface ComputerBuilder {
 
     // добавление процессора
-    public ComputerBuilder addCPU();
+    ComputerBuilder addCPU();
 
     // добавление оперативной памяти
-    public ComputerBuilder addRAM();
+    ComputerBuilder addRAM();
 
     // добавление видеокарты
-    public ComputerBuilder addGraphicsCard();
+    ComputerBuilder addGraphicsCard();
 
     // добавление блока питания
-
-    public ComputerBuilder addPowerSupply();
+     ComputerBuilder addPowerSupply();
 
     // Выпуск компьютера
-
-    public Computer build();
+    Computer build();
 }

@@ -38,7 +38,6 @@ public class GameComputerBuilder implements ComputerBuilder {
 
     @Override
     public Computer build() {
-        Computer computer = new Computer(CPU, RAM, graphicsCard, powerSupply);
-        return computer;
+        return new Computer(CPU, RAM, graphicsCard, powerSupply);
     }
 }

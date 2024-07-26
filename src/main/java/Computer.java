@@ -36,8 +36,8 @@ public class Computer {
         return graphicsCard;
     }
 
-    public void setGraphicsCard(String graficsCard) {
-        this.graphicsCard = graficsCard;
+    public void setGraphicsCard(String graphicsCard) {
+        this.graphicsCard = graphicsCard;
     }
 
     public String getPowerSupply() {

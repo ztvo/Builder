@@ -1,6 +1,6 @@
 public class ComputerDirector {
 
-    private ComputerBuilder builder;
+    final private ComputerBuilder builder;
 
     public ComputerDirector(ComputerBuilder builder) {
         super();
