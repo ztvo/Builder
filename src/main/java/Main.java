@@ -5,6 +5,9 @@ public class Main {
     public static void main(String[] args) {
         int selection;
         boolean exit;
+        ComputerBuilder builder;
+        ComputerDirector director;
+        Computer computer;
         System.out.println("Выберите конфигурацию компьютера");
         System.out.println("-------------------------\n");
         System.out.println("1 - Игровой");
@@ -18,22 +21,22 @@ public class Main {
 
             switch (selection) {
                 case 1:
-                    ComputerBuilder builderGame = new GameComputerBuilder();
-                    ComputerDirector directorGame = new ComputerDirector(builderGame);
-                    Computer computerGame = directorGame.assemblingComputer();
-                    System.out.println(computerGame);
+                    builder = new GameComputerBuilder();
+                    director = new ComputerDirector(builder);
+                    computer = director.assemblingComputer();
+                    System.out.println(computer);
                     break;
                 case 2:
-                    ComputerBuilder builderOffice = new OfficeComputerBuilder();
-                    ComputerDirector directorOffice = new ComputerDirector(builderOffice);
-                    Computer computerOffice = directorOffice.assemblingComputer();
-                    System.out.println(computerOffice);
+                    builder = new OfficeComputerBuilder();
+                    director = new ComputerDirector(builder);
+                    computer = director.assemblingComputer();
+                    System.out.println(computer);
                     break;
                 case 3:
-                    ComputerBuilder builderMultiMedia = new MultiMediaComputerBuilder();
-                    ComputerDirector directorMultiMedia = new ComputerDirector(builderMultiMedia);
-                    Computer computerMultiMedia = directorMultiMedia.assemblingComputer();
-                    System.out.println(computerMultiMedia);
+                    builder = new MultiMediaComputerBuilder();
+                    director = new ComputerDirector(builder);
+                    computer = director.assemblingComputer();
+                    System.out.println(computer);
                     break;
                 case 4:
                     exit = true;
