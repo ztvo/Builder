@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         int selection;
         boolean exit =  false;
-        ComputerBuilder builder;
+        IComputerBuilder builder;
         ComputerDirector director;
         Computer computer;
         System.out.println("Выберите конфигурацию компьютера");

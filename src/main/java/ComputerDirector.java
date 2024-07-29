@@ -1,8 +1,8 @@
 public class ComputerDirector {
 
-    final private ComputerBuilder builder;
+    final private IComputerBuilder builder;
 
-    public ComputerDirector(ComputerBuilder builder) {
+    public ComputerDirector(IComputerBuilder builder) {
         super();
         this.builder = builder;
         if (this.builder == null) {

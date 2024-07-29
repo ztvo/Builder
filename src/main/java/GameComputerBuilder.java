@@ -1,4 +1,4 @@
-public class GameComputerBuilder implements ComputerBuilder {
+public class GameComputerBuilder implements IComputerBuilder {
     private String CPU;
     private String RAM;
     private String graphicsCard;
@@ -9,28 +9,28 @@ public class GameComputerBuilder implements ComputerBuilder {
     }
 
     @Override
-    public ComputerBuilder addCPU() {
+    public IComputerBuilder addCPU() {
         System.out.println("Assembling CPU to the game model");
         this.CPU = "Intel Xeon Golden";
         return this;
     }
 
     @Override
-    public ComputerBuilder addRAM() {
+    public IComputerBuilder addRAM() {
         System.out.println("Assembling RAM to the game model");
         this.RAM = "356 ГБ";
         return this;
     }
 
     @Override
-    public ComputerBuilder addGraphicsCard() {
+    public IComputerBuilder addGraphicsCard() {
         System.out.println("Assembling graphic card to the game model");
         this.graphicsCard = "PowerColor Radeon RX 580";
         return this;
     }
 
     @Override
-    public ComputerBuilder addPowerSupply() {
+    public IComputerBuilder addPowerSupply() {
         System.out.println("Assembling power supply to the game model");
         this.powerSupply = "750 Вт";
         return this;

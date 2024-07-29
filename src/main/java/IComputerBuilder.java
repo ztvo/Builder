@@ -1,16 +1,16 @@
-public interface ComputerBuilder {
+public interface IComputerBuilder {
 
     // добавление процессора
-    ComputerBuilder addCPU();
+    IComputerBuilder addCPU();
 
     // добавление оперативной памяти
-    ComputerBuilder addRAM();
+    IComputerBuilder addRAM();
 
     // добавление видеокарты
-    ComputerBuilder addGraphicsCard();
+    IComputerBuilder addGraphicsCard();
 
     // добавление блока питания
-     ComputerBuilder addPowerSupply();
+     IComputerBuilder addPowerSupply();
 
     // Выпуск компьютера
     Computer build();

@@ -1,4 +1,4 @@
-public class MultiMediaComputerBuilder implements ComputerBuilder {
+public class MultiMediaComputerBuilder implements IComputerBuilder {
     private String CPU;
     private String RAM;
     private String graphicsCard;
@@ -9,28 +9,28 @@ public class MultiMediaComputerBuilder implements ComputerBuilder {
     }
 
     @Override
-    public ComputerBuilder addCPU() {
+    public IComputerBuilder addCPU() {
         System.out.println("Assembling CPU to the multi media model");
         this.CPU = "Intel Core i3-10100F BOX";
         return this;
     }
 
     @Override
-    public ComputerBuilder addRAM() {
+    public IComputerBuilder addRAM() {
         System.out.println("Assembling RAM to the multi media model");
         this.RAM = "356 ГБ";
         return this;
     }
 
     @Override
-    public ComputerBuilder addGraphicsCard() {
+    public IComputerBuilder addGraphicsCard() {
         System.out.println("Assembling graphic card to the multi media model");
         this.graphicsCard = "PowerColor Radeon RX 580";
         return this;
     }
 
     @Override
-    public ComputerBuilder addPowerSupply() {
+    public IComputerBuilder addPowerSupply() {
         System.out.println("Assembling power supply to the multi media model");
         this.powerSupply = "500 Вт";
         return this;
